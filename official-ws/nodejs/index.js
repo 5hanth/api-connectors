@@ -229,7 +229,7 @@ function addStreamHelper(client, symbol, tableName, callback) {
 }
 
 function clone(data) {
-  return data.map(o => Object.assign({}, o));
+  return {...data};
 }
 
 if (require.main === module) {
